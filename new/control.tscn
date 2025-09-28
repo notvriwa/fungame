@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp7jd80svbwjk"]
+
+[ext_resource type="Script" uid="uid://dqo8uv52l66ti" path="res://nigger.gd" id="1_0fbet"]
+
+[node name="editorial" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 334.0
+offset_top = 461.0
+offset_right = 866.0
+offset_bottom = 561.0
+theme_override_font_sizes/font_size = 34
+text = "continue"
+script = ExtResource("1_0fbet")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 251.0
+offset_top = 277.0
+offset_right = 973.0
+offset_bottom = 411.0
+theme_override_font_sizes/font_size = 24
+text = "you are a duck and you have to sacrifice your mass for chicken"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

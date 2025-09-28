@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuvvjk0bggtk2"]
+
+[ext_resource type="Script" uid="uid://dpbxdgxbhfwxk" path="res://button.gd" id="1_lti8b"]
+
+[sub_resource type="FontFile" id="FontFile_vsb4k"]
+cache/0/70/0/ascent = 0.0
+cache/0/70/0/descent = 0.0
+cache/0/70/0/underline_position = 0.0
+cache/0/70/0/underline_thickness = 0.0
+cache/0/70/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 288.0
+offset_right = 1153.0
+offset_bottom = 495.0
+theme_override_font_sizes/font_size = 48
+text = "Play"
+script = ExtResource("1_lti8b")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 1155.0
+offset_bottom = 244.0
+theme_override_fonts/font = SubResource("FontFile_vsb4k")
+theme_override_font_sizes/font_size = 70
+text = "The Absurd Pablo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 737.0
+offset_top = 550.0
+offset_right = 1151.0
+offset_bottom = 647.0
+theme_override_font_sizes/font_size = 18
+text = "MADE WITH LOVE BY BRIWATS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
